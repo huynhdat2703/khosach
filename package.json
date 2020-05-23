@@ -1,0 +1,27 @@
+{
+  "name": "khosach",
+  "version": "1.0.0",
+  "description": "Website reading books online",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --inspect ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huynhdat2703/khosach.git"
+  },
+  "author": "Jagger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huynhdat2703/khosach/issues"
+  },
+  "homepage": "https://github.com/huynhdat2703/khosach#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^2.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css")
+        //- link(rel='stylesheet', href='https://pro.fontawesome.com/releases/v5.10.0/css/all.css', integrity='sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p', crossorigin='anonymous')
+        link(rel="stylesheet", href="css/style.css")
+        title Kho Sách Online
+    body
+        #header
+            nav.navbar.navbar-expand-sm.navbar-dark.fixed-top
+                .container
+                    a.navbar-brand(href="/") Kho Sách Online
+                    ul.navbar-nav.flex-row
+                        li.nav-item
+                            a.nav-link.text-light(href='#') TRANG CHỦ
+                        li.nav-item
+                            a.nav-link.text-light(href='#') GIỚI THIỆU
+                        li.nav-item.dropdown
+                            a.nav-link.text-light.dropdown-toggle(data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false") THỂ LOẠI
+                            .dropdown-menu
+                                a.dropdown-item(href="#") Action 1
+                                a.dropdown-item(href="#") Action 2
+                                a.dropdown-item(href="#") Action 3
+                                a.dropdown-item(href="#") Action 4
+                                a.dropdown-item(href="#") Action 5
+                        li.nav-item
+                            a.nav-link.text-light(href='#') LIÊN HỆ
+                    form.form-inline.ml-auto
+                        input.form-control(type='search', placeholder='Nhập tên sách...')
+                        button.btn.btn-secondary(type='submit') Search
+        #main.container
+            .alert.alert-danger.mb-2(role="alert")
+                h6.text-center Website vẫn đang trong giai đoạn phát triển và hoàn thiện!!!
+            block content
+        #footer.container-fluid.mt-2
+            .container
+                .row
+                    .col-4
+                        p.text-light.mt-4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, officiis odio aut deleniti minus consequatur qui eaque, vitae, repellat in nesciunt sed aliquid voluptatibus facilis unde ipsam cum nisi. Fugit.
+                    .col-4
+                        p.text-light.mt-4 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium voluptas, vel aliquid eos et odit, dolor quas quia repudiandae eum totam. Delectus beatae provident alias aliquam, praesentium iure possimus cum!
+                    .col-4
+                        p.text-light.mt-4 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium voluptas, vel aliquid eos et odit, dolor quas quia repudiandae eum totam. Delectus beatae provident alias aliquam, praesentium iure possimus cum!
+                .col-12
+                    p.text-light.text-center.mb-0 © 2020 Khosach, Nonprofit Organization.
+        script(src="js/style.js")
+        script(src="https://code.jquery.com/jquery-3.4.1.slim.min.js")
+        script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js")
+        script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js")

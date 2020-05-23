@@ -1,0 +1,74 @@
+body {
+  background-color: #eee;
+}
+
+h5 {
+  margin-top: .5rem;
+  color: #2C7ABE;
+}
+
+#main {
+  margin-top: 65px;
+}
+
+.navbar {
+  background-color: #2C7ABE;
+}
+
+.btn-secondary {
+  background-color: #BFA22C;
+}
+
+.btn-secondary:hover {
+  background-color: #73521A;
+}
+
+.navbar-nav li:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown-item:hover {
+  background-color: #eee;
+}
+
+#footer {
+  background-color: #333;
+  display: block;
+}
+
+.content {
+  height: 800px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.sidebar {
+  height: 800px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.title-right {
+  text-align: right;
+}
+
+.book-cover:hover {
+  opacity: 0.8;
+}
+
+.book-title {
+  color: black;
+}
+
+.book-title:hover {
+  color: #2C7ABE;
+  text-decoration: none;
+}
+
+.new-list-content {
+  border-bottom: 1px dashed #e5e6e9;
+}
+
+.chapter {
+  text-align: right;
+}
