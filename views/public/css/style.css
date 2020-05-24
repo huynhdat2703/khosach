@@ -5,6 +5,7 @@ body {
 h5 {
   margin-top: .5rem;
   color: #2C7ABE;
+  font-weight: 600;
 }
 
 #main {
@@ -60,7 +61,17 @@ h5 {
   color: black;
 }
 
+.category-title a{
+  color: black;
+  font-weight: 500;
+}
+
 .book-title:hover {
+  color: #2C7ABE;
+  text-decoration: none;
+}
+
+.category-title a:hover {
   color: #2C7ABE;
   text-decoration: none;
 }
@@ -71,4 +82,5 @@ h5 {
 
 .chapter {
   text-align: right;
+  color: #777;
 }
