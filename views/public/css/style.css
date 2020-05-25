@@ -9,7 +9,7 @@ h5 {
 }
 
 #main {
-  margin-top: 65px;
+  margin-top: 80px;
 }
 
 .navbar {
@@ -53,6 +53,14 @@ h5 {
   text-align: right;
 }
 
+.count-view-group {
+  top: 0;
+  right: 17px;
+  opacity: 0.8;
+  background-color: whitesmoke;
+  float: right;
+}
+
 .book-cover:hover {
   opacity: 0.8;
 }
@@ -83,4 +91,33 @@ h5 {
 .chapter {
   text-align: right;
   color: #777;
+}
+
+.top-number {
+  font-size: 30px;
+  font-weight: 400;
+  color: #2C7ABE;
+  padding: 5px;
+  text-align: center;
+}
+
+.top-one {
+  color: #E74C3C;
+}
+
+.top-two {
+  color: #4CAF50;
+}
+
+.top-three {
+  color: #FFC107;
+}
+
+.count-view-sidebar-group {
+  color: #999;
+  font-size: 14px;
+}
+
+.connect-icon {
+  font-size: 40px;
 }

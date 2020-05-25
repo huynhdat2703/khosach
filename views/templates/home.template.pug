@@ -11,7 +11,8 @@ html(lang="en")
         #header
             nav.navbar.navbar-expand-sm.navbar-dark.fixed-top
                 .container
-                    a.navbar-brand(href="/") Kho Sách Online
+                    a.navbar-brand(href="/")
+                        img(src="https://khosachonline.com/public/images/logo@2x.png" width="120")
                     ul.navbar-nav.flex-row
                         li.nav-item
                             a.nav-link.text-light(href='#') TRANG CHỦ
@@ -30,21 +31,29 @@ html(lang="en")
                             a.nav-link.text-light(href='#') LIÊN HỆ
                     form.form-inline.ml-auto
                         input.form-control(type='search', placeholder='Nhập tên sách...')
-                        button.btn.btn-secondary(type='submit') Search
+                        button.btn.btn-secondary(type='submit')
+                            i.fas.fa-search
         #main.container
-            .alert.alert-danger.mb-2(role="alert")
+            .alert.alert-info.mb-2(role="alert")
                 h6.text-center Website vẫn đang trong giai đoạn phát triển và hoàn thiện!!!
             block content
         #footer.container-fluid.mt-2
             .container
                 .row
-                    .col-4
-                        p.text-light.mt-4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, officiis odio aut deleniti minus consequatur qui eaque, vitae, repellat in nesciunt sed aliquid voluptatibus facilis unde ipsam cum nisi. Fugit.
-                    .col-4
-                        p.text-light.mt-4 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium voluptas, vel aliquid eos et odit, dolor quas quia repudiandae eum totam. Delectus beatae provident alias aliquam, praesentium iure possimus cum!
-                    .col-4
-                        p.text-light.mt-4 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium voluptas, vel aliquid eos et odit, dolor quas quia repudiandae eum totam. Delectus beatae provident alias aliquam, praesentium iure possimus cum!
-                .col-12
+                    .col-8
+                        p.text-light.mt-4 KhoSachOnline là Website đọc sách online hoàn toàn miễn phí dành cho người Việt, với nhiều đầu sách hay và đa dạng về chủ đề được chọn lọc và đăng tải một cách kĩ lưỡng.
+                        p.text-light.mt-4 Quý bạn đọc có thể ủng hộ website bằng cách giới thiệu đến bạn bè, chúc bạn có những giây phút đọc truyện thư giãn thật bổ ích.
+                    .col-4.text-center.text-light
+                        p.mt-4 Kết nối với chúng tôi:
+                        a(href="http://")
+                            i.connect-icon.fab.fa-facebook.ml-1.mr-1
+                        a(href="http://")
+                            i.connect-icon.fab.fa-instagram.ml-1.mr-1
+                        a(href="http://")
+                            i.connect-icon.fab.fa-twitter-square.ml-1.mr-1
+                        a(href="http://")
+                            i.connect-icon.fab.fa-google-plus-square.ml-1.mr-1
+                .col-md-3.col-sm-6.col-12
                     p.text-light.text-center.mb-0 © 2020 Khosach, Nonprofit Organization.
         script(src="js/style.js")
         script(src="https://code.jquery.com/jquery-3.4.1.slim.min.js")
