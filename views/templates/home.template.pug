@@ -9,35 +9,207 @@ html(lang="en")
         title Kho Sách Online
     body
         #header
-            nav.navbar.navbar-expand-sm.navbar-dark.fixed-top
+            nav.navbar.navbar-expand-lg.navbar-dark.fixed-top
                 .container
                     a.navbar-brand(href="/")
                         img(src="https://khosachonline.com/public/images/logo@2x.png" width="120")
-                    ul.navbar-nav.flex-row
-                        li.nav-item
-                            a.nav-link.text-light(href='#') TRANG CHỦ
-                        li.nav-item
-                            a.nav-link.text-light(href='#') GIỚI THIỆU
-                        li.nav-item.dropdown
-                            a.nav-link.text-light.dropdown-toggle(data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false") THỂ LOẠI
-                            .dropdown-menu
-                                a.dropdown-item(href="#") Action 1
-                                a.dropdown-item(href="#") Action 2
-                                a.dropdown-item(href="#") Action 3
-                                a.dropdown-item(href="#") Action 4
-                                a.dropdown-item(href="#") Action 5
-                        li.nav-item
-                            a.nav-link.text-light(href='#') LIÊN HỆ
-                    form.form-inline.ml-auto
-                        input.form-control(type='search', placeholder='Nhập tên sách...')
-                        button.btn.btn-secondary(type='submit')
-                            i.fas.fa-search
+                    button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation")
+                        span.navbar-toggler-icon
+                    .collapse.navbar-collapse#navbarTogglerDemo02
+                        ul.navbar-nav.mr-auto.mt-2.mt-lg-0
+                            li.nav-item
+                                a.nav-link.text-light(href='#') TRANG CHỦ
+                            li.nav-item
+                                a.nav-link.text-light(href='#') GIỚI THIỆU
+                            li.nav-item.dropdown
+                                a.nav-link.text-light.dropdown-toggle(data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false") THỂ LOẠI
+                                .dropdown-menu
+                                    a.dropdown-item(href="/category") Action 1
+                                    a.dropdown-item(href="/category") Action 2
+                                    a.dropdown-item(href="/category") Action 3
+                                    a.dropdown-item(href="/category") Action 4
+                                    a.dropdown-item(href="/category") Action 5
+                            li.nav-item
+                                a.nav-link.text-light(href='#') LIÊN HỆ
+                        form.form-inline
+                            input.form-control(max-width="70%", type='search', placeholder='Nhập tên sách...')
+                            button.btn.btn-secondary(type='submit')
+                                i.fas.fa-search
         #main.container
             .alert.alert-info.mb-2(role="alert")
                 h6.text-center Website vẫn đang trong giai đoạn phát triển và hoàn thiện!!!
             .row.main-container
                 block content
+                #sidebar.col-md-4.col-12
+                    .col-12.bg-light.border.category-list
+                        .row.category-list-title.border-bottom
+                            .col-12.category-list-title
+                                h5 CÁC THỂ LOẠI
+                        .row.category-list-content.border-bottom
+                            .col-6.category-title.mb-1.mt-1
+                                a(href="#") 
+                                    i.fas.fa-tags 
+                                    span.category-title  Data 1
+                            .col-6.category-title.mb-1.mt-1
+                                a(href="#")
+                                    i.fas.fa-tags
+                                    span.category-title  Data 2
+                            .col-6.category-title.mb-1.mt-1
+                                a(href="#")
+                                    i.fas.fa-tags
+                                    span.category-title  Data 3
+                            .col-6.category-title.mb-1.mt-1
+                                a(href="#")
+                                    i.fas.fa-tags
+                                    span.category-title  Data 4
+                            .col-6.category-title.mb-1.mt-1
+                                a(href="#")
+                                    i.fas.fa-tags
+                                    span.category-title  Data 5
+                            .col-6.category-title.mb-1.mt-1
+                                a(href="#")
+                                    i.fas.fa-tags
+                                    span.category-title  Data 6
+                            .col-6.category-title.mb-1.mt-1
+                                a(href="#")
+                                    i.fas.fa-tags
+                                    span.category-title  Data 7
+                            .col-6.category-title.mb-1.mt-1
+                                a(href="#")
+                                    i.fas.fa-tags
+                                    span.category-title  Data 8
+                            .col-6.category-title.mb-1.mt-1
+                                a(href="#")
+                                    i.fas.fa-tags
+                                    span.category-title  Data 9
+                            .col-6.category-title.mb-1.mt-1
+                                a(href="#")
+                                    i.fas.fa-tags
+                                    span.category-title  Data 10
+                            .col-6.category-title.mb-1.mt-1
+                                a(href="#")
+                                    i.fas.fa-tags
+                                    span.category-title  Data 11
+                            .col-6.category-title.mb-1.mt-1
+                                a(href="#")
+                                    i.fas.fa-tags
+                                    span.category-title  Data 12
+                            .col-6.category-title.mb-1.mt-1
+                                a(href="#")
+                                    i.fas.fa-tags
+                                    span.category-title  Data 13
+                            .col-6.category-title.mb-1.mt-1
+                                a(href="#")
+                                    i.fas.fa-tags
+                                    span.category-title  Data 14
+                            .col-6.category-title.mb-1.mt-1
+                                a(href="#")
+                                    i.fas.fa-tags
+                                    span.category-title  Data 15
+                            .col-6.category-title.mb-1.mt-1
+                                a(href="#")
+                                    i.fas.fa-tags
+                                    span.category-title  Data 16
+                            .col-6.category-title.mb-1.mt-1
+                                a(href="#")
+                                    i.fas.fa-tags
+                                    span.category-title  Data 17
+                            .col-6.category-title.mb-1.mt-1
+                                a(href="#")
+                                    i.fas.fa-tags
+                                    span.category-title  Data 18
+                            .col-6.category-title.mb-1.mt-1
+                                a(href="#")
+                                    i.fas.fa-tags
+                                    span.category-title  Data 19
+                            .col-6.category-title.mb-1.mt-1
+                                a(href="#")
+                                    i.fas.fa-tags
+                                    span.category-title  Data 20
+                    .col-12.bg-light.border.category-list.mt-2
+                        .row.category-list-title.border-bottom
+                            .col-12.category-list-title
+                                h5 SÁCH HAY
+                        .row.new-list-content
+                            .col-2.top-number.top-one 1       
+                            .col-10.category-title.pt-1.pb-1
+                                a(href="#") Diễn Tinh Xuyên Vào Kịch Khổ Tình
+                                .count-view-sidebar-group 
+                                    i.fas.fa-eye
+                                        lable  123456789
+                        .row.new-list-content
+                            .col-2.top-number.top-two.mb-1.mt-1
+                                lable 2       
+                            .col-10.category-title.pt-1.pb-1
+                                a(href="#") Diễn Tinh Xuyên Vào Kịch Khổ Tình
+                                .count-view-sidebar-group 
+                                    i.fas.fa-eye
+                                        lable  123456789
+                        .row.new-list-content
+                            .col-2.top-number.top-three.mb-1.mt-1
+                                lable 3       
+                            .col-10.category-title.pt-1.pb-1
+                                a(href="#") Diễn Tinh Xuyên Vào Kịch Khổ Tình
+                                .count-view-sidebar-group 
+                                    i.fas.fa-eye
+                                        lable  123456789
+                        .row.new-list-content
+                            .col-2.top-number.mb-1.mt-1
+                                lable 4       
+                            .col-10.category-title.pt-1.pb-1
+                                a(href="#") Diễn Tinh Xuyên Vào Kịch Khổ Tình
+                                .count-view-sidebar-group 
+                                    i.fas.fa-eye
+                                        lable  123456789
+                        .row.new-list-content
+                            .col-2.top-number.mb-1.mt-1
+                                lable 5       
+                            .col-10.category-title.pt-1.pb-1
+                                a(href="#") Diễn Tinh Xuyên Vào Kịch Khổ Tình
+                                .count-view-sidebar-group 
+                                    i.fas.fa-eye
+                                        lable  123456789
+                        .row.new-list-content
+                            .col-2.top-number.mb-1.mt-1
+                                lable 6       
+                            .col-10.category-title.pt-1.pb-1
+                                a(href="#") Diễn Tinh Xuyên Vào Kịch Khổ Tình
+                                .count-view-sidebar-group 
+                                    i.fas.fa-eye
+                                        lable  123456789
+                        .row.new-list-content
+                            .col-2.top-number.mb-1.mt-1
+                                lable 7       
+                            .col-10.category-title.pt-1.pb-1
+                                a(href="#") Diễn Tinh Xuyên Vào Kịch Khổ Tình
+                                .count-view-sidebar-group 
+                                    i.fas.fa-eye
+                                        lable  123456789
+                        .row.new-list-content
+                            .col-2.top-number.mb-1.mt-1
+                                lable 8       
+                            .col-10.category-title.pt-1.pb-1
+                                a(href="#") Diễn Tinh Xuyên Vào Kịch Khổ Tình
+                                .count-view-sidebar-group 
+                                    i.fas.fa-eye
+                                        lable  123456789
+                        .row.new-list-content
+                            .col-2.top-number.mb-1.mt-1
+                                lable 9      
+                            .col-10.category-title.pt-1.pb-1
+                                a(href="#") Diễn Tinh Xuyên Vào Kịch Khổ Tình
+                                .count-view-sidebar-group 
+                                    i.fas.fa-eye
+                                        lable  123456789
+                        .row.new-list-content
+                            .col-2.top-number.mb-1.mt-1
+                                lable 10       
+                            .col-10.category-title.pt-1.pb-1
+                                a(href="#") Diễn Tinh Xuyên Vào Kịch Khổ Tình
+                                .count-view-sidebar-group 
+                                    i.fas.fa-eye
+                                        lable  123456789
         #footer.container-fluid.mt-2
             .container
                 .row

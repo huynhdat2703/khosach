@@ -14,6 +14,10 @@ app.get('/', (req, res) => {
     res.render('home/index');
 });
 
+app.get('/category', (req, res) => {
+    res.render('home/category');
+});
+
 app.listen(port, () => {
     console.log('Server is running on port', port);
 });
