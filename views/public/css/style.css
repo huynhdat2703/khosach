@@ -1,5 +1,6 @@
 body {
   background-color: #eee;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h5 {
@@ -86,6 +87,11 @@ h5 {
 
 .new-list-content {
   border-bottom: 1px dashed #e5e6e9;
+}
+
+.chapter-content {
+  border-bottom: 1px dashed #e5e6e9;
+  line-height: 3em;
 }
 
 .chapter {

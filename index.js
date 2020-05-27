@@ -18,6 +18,10 @@ app.get('/category', (req, res) => {
     res.render('home/category');
 });
 
+app.get('/detail', (req, res) => {
+    res.render('home/detail');
+});
+
 app.listen(port, () => {
     console.log('Server is running on port', port);
 });
