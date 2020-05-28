@@ -22,6 +22,10 @@ app.get('/detail', (req, res) => {
     res.render('home/detail');
 });
 
+app.get('/view', (req, res) => {
+    res.render('home/view');
+});
+
 app.listen(port, () => {
     console.log('Server is running on port', port);
 });

@@ -127,3 +127,14 @@ h5 {
 .connect-icon {
   font-size: 40px;
 }
+
+.scrollable-menu {
+  height: auto;
+  max-height: 300px;
+  overflow-x: hidden;
+}
+
+.book-content {
+  font-size: 18px;
+  line-height: 2.5rem;
+}
