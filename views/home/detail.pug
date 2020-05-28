@@ -1,5 +1,16 @@
 extends ../templates/home.template.pug
 block content
+    #downloadError.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+        .modal-dialog(role='document')
+            .modal-content
+                .modal-header
+                    h5#exampleModalLabel.modal-title Thông Báo
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') &times;
+                .modal-body
+                    p.text-center.mt-0.mb-0 Tính năng Download đang trong giai đoạn phát triển!
+                .modal-footer
+                    button.btn.btn-danger(type='button', data-dismiss='modal') Đóng
     #content.col-md-8.col-12
         .row.bg-light.border.ml-0.mr-0
             .col-md-4.col-12
@@ -10,10 +21,10 @@ block content
                 h6 Thể loại: 
                     a(href="/view") Công Nghệ Thông Tin
                 h6 Lượt xem: 123456789
-                .alert.alert-danger(role="alert")
-                    i.fas.fa-file-download
-                    lable  Tính năng Download đang trong giai đoạn phát triển!
-                a.btn.btn-danger.text-light.mr-2.mb-2(href="#") Download
+                .alert.alert-primary(role="alert")
+                    i.far.fa-hand-point-down
+                    lable   Chọn chức năng tương ứng bên dưới
+                a.btn.btn-danger.text-light.mr-2.mb-2(href="#", data-toggle="modal", data-target="#downloadError") Download
                 a.btn.btn-primary.text-light.mb-2(href="/view") Xem Online
         .row.bg-light.border.ml-0.mr-0.mt-2
             .col-12.title-left.border-bottom

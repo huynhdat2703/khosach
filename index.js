@@ -10,21 +10,13 @@ app.set('views', './views');
 //Set static folder
 app.use(express.static('views/public'));
 
-app.get('/', (req, res) => {
-    res.render('home/index');
-});
+//Set Home Router
+const homeRoute = require('./routes/home.route');
+app.use('/', homeRoute);
 
-app.get('/category', (req, res) => {
-    res.render('home/category');
-});
-
-app.get('/detail', (req, res) => {
-    res.render('home/detail');
-});
-
-app.get('/view', (req, res) => {
-    res.render('home/view');
-});
+//Set Admin Router
+const adminRoute = require('./routes/admin.route');
+app.use('/admin', adminRoute);
 
 app.listen(port, () => {
     console.log('Server is running on port', port);
