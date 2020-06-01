@@ -5,7 +5,7 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css")
         link(rel='stylesheet', href='https://pro.fontawesome.com/releases/v5.10.0/css/all.css', integrity='sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p', crossorigin='anonymous')
-        link(rel="stylesheet", href="css/style.css")
+        link(rel="stylesheet", href="/css/style.css")
         title Kho Sách Online
     body
         #header
@@ -25,11 +25,8 @@ html(lang="en")
                                 a.nav-link.text-light.dropdown-toggle(data-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false") THỂ LOẠI
                                 .dropdown-menu
-                                    a.dropdown-item(href="/category") Action 1
-                                    a.dropdown-item(href="/category") Action 2
-                                    a.dropdown-item(href="/category") Action 3
-                                    a.dropdown-item(href="/category") Action 4
-                                    a.dropdown-item(href="/category") Action 5
+                                    each category in listCategory
+                                        a.dropdown-item(href="/category/" + category.slug)= category.category
                             li.nav-item
                                 a.nav-link.text-light(href='#') LIÊN HỆ
                         form.form-inline
@@ -47,86 +44,11 @@ html(lang="en")
                             .col-12.category-list-title
                                 h5 CÁC THỂ LOẠI
                         .row.category-list-content.border-bottom
-                            .col-6.category-title.mb-1.mt-1
-                                a(href="#") 
-                                    i.fas.fa-tags.text-info 
-                                    span.category-title  Data 1
-                            .col-6.category-title.mb-1.mt-1
-                                a(href="#")
-                                    i.fas.fa-tags.text-info 
-                                    span.category-title  Data 2
-                            .col-6.category-title.mb-1.mt-1
-                                a(href="#")
-                                    i.fas.fa-tags.text-info 
-                                    span.category-title  Data 3
-                            .col-6.category-title.mb-1.mt-1
-                                a(href="#")
-                                    i.fas.fa-tags.text-info
-                                    span.category-title  Data 4
-                            .col-6.category-title.mb-1.mt-1
-                                a(href="#")
-                                    i.fas.fa-tags.text-info
-                                    span.category-title  Data 5
-                            .col-6.category-title.mb-1.mt-1
-                                a(href="#")
-                                    i.fas.fa-tags.text-info
-                                    span.category-title  Data 6
-                            .col-6.category-title.mb-1.mt-1
-                                a(href="#")
-                                    i.fas.fa-tags.text-info
-                                    span.category-title  Data 7
-                            .col-6.category-title.mb-1.mt-1
-                                a(href="#")
-                                    i.fas.fa-tags.text-info
-                                    span.category-title  Data 8
-                            .col-6.category-title.mb-1.mt-1
-                                a(href="#")
-                                    i.fas.fa-tags.text-info
-                                    span.category-title  Data 9
-                            .col-6.category-title.mb-1.mt-1
-                                a(href="#")
-                                    i.fas.fa-tags.text-info
-                                    span.category-title  Data 10
-                            .col-6.category-title.mb-1.mt-1
-                                a(href="#")
-                                    i.fas.fa-tags.text-info
-                                    span.category-title  Data 11
-                            .col-6.category-title.mb-1.mt-1
-                                a(href="#")
-                                    i.fas.fa-tags.text-info
-                                    span.category-title  Data 12
-                            .col-6.category-title.mb-1.mt-1
-                                a(href="#")
-                                    i.fas.fa-tags.text-info
-                                    span.category-title  Data 13
-                            .col-6.category-title.mb-1.mt-1
-                                a(href="#")
-                                    i.fas.fa-tags.text-info
-                                    span.category-title  Data 14
-                            .col-6.category-title.mb-1.mt-1
-                                a(href="#")
-                                    i.fas.fa-tags.text-info
-                                    span.category-title  Data 15
-                            .col-6.category-title.mb-1.mt-1
-                                a(href="#")
-                                    i.fas.fa-tags.text-info
-                                    span.category-title  Data 16
-                            .col-6.category-title.mb-1.mt-1
-                                a(href="#")
-                                    i.fas.fa-tags.text-info
-                                    span.category-title  Data 17
-                            .col-6.category-title.mb-1.mt-1
-                                a(href="#")
-                                    i.fas.fa-tags.text-info
-                                    span.category-title  Data 18
-                            .col-6.category-title.mb-1.mt-1
-                                a(href="#")
-                                    i.fas.fa-tags.text-info
-                                    span.category-title  Data 19
-                            .col-6.category-title.mb-1.mt-1
-                                a(href="#")
-                                    i.fas.fa-tags.text-info
-                                    span.category-title  Data 20
+                            each category in listCategory
+                                .col-6.category-title.mb-1.mt-1
+                                    a(href="/category/" + category.slug) 
+                                        i.fas.fa-tags.text-info 
+                                        span.category-title.ml-1= category.category
                     .col-12.bg-light.border.category-list.mt-2
                         .row.category-list-title.border-bottom
                             .col-12.category-list-title
@@ -228,7 +150,7 @@ html(lang="en")
                             i.connect-icon.fab.fa-google-plus-square.ml-1.mr-1
                 .col-12
                     p.text-light.text-center.mb-0 © 2020 Khosach, Nonprofit Organization.
-        script(src="js/style.js")
+        script(src="/js/style.js")
         script(src="https://code.jquery.com/jquery-3.4.1.slim.min.js")
         script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js")
         script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js")

@@ -1,8 +1,11 @@
-const userModel = require('../models/user.model');
+function indexPage(req, res) {
+    var days = new Date();
 
-async function indexPage(req, res) {
-    var users = await userModel.getAllUsers();
-    console.log(users);
+    var date = days.getDate();
+    var month = days.getMonth() + 1;
+    var year = days.getFullYear();
+
+    console.log(date, month, year);
     res.render('admin/index');
 }
 
