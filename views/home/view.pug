@@ -6,8 +6,8 @@ block content
         .row.border
             .col-12
                 .book-header.text-center
-                    h5 Gian Nịnh Quốc Sư Yêu Tà Thê
-                    h5.text-muted Chương 1: Sinh không thể luyến (Sinh ra đã được định sẵn là cô độc)
+                    h5= selectBook.title
+                    h5.text-muted= selectChapter.chap +": "+ selectChapter.chapTitle
                     hr
                     .input-group.justify-content-center.mt-3.mb-3
                         button.btn.btn-light.mr-3

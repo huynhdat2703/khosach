@@ -23,43 +23,8 @@ block content
                     h5 SÁCH MỚI CẬP NHẬT
                 .col-5.title-right.mt-2
                     a(href="#") Xem thêm&raquo;
-            .row.chapter-content
-                a(href="#").col-9.book-title 
-                    lable - Đấu La Đại Lục: Ý Trung Nhân
-                .col-3.chapter Chương 285
-            .row.chapter-content
-                a(href="#").col-9.book-title 
-                    lable - Đấu La Đại Lục: Ý Trung Nhân
-                .col-3.chapter Chương 285
-            .row.chapter-content
-                a(href="#").col-9.book-title 
-                    lable - Đấu La Đại Lục: Ý Trung Nhân
-                .col-3.chapter Chương 285
-            .row.chapter-content
-                a(href="#").col-9.book-title 
-                    lable - Đấu La Đại Lục: Ý Trung Nhân
-                .col-3.chapter Chương 285
-            .row.chapter-content
-                a(href="#").col-9.book-title 
-                    lable - Đấu La Đại Lục: Ý Trung Nhân
-                .col-3.chapter Chương 285
-            .row.chapter-content
-                a(href="#").col-9.book-title 
-                    lable - Đấu La Đại Lục: Ý Trung Nhân
-                .col-3.chapter Chương 285
-            .row.chapter-content
-                a(href="#").col-9.book-title 
-                    lable - Đấu La Đại Lục: Ý Trung Nhân
-                .col-3.chapter Chương 285
-            .row.chapter-content
-                a(href="#").col-9.book-title 
-                    lable - Đấu La Đại Lục: Ý Trung Nhân
-                .col-3.chapter Chương 285
-            .row.chapter-content
-                a(href="#").col-9.book-title 
-                    lable - Đấu La Đại Lục: Ý Trung Nhân
-                .col-3.chapter Chương 285
-            .row.chapter-content
-                a(href="#").col-9.book-title 
-                    lable - Đấu La Đại Lục: Ý Trung Nhân
-                .col-3.chapter Chương 285
+            each newBook in listNewestBook
+                .row.chapter-content
+                    a(href="/view/"+newBook.book.slug+"/"+newBook.chapter.slug).col-9.book-title 
+                        lable= "- " + newBook.book.title
+                    .col-3.chapter= newBook.chapter.chap

@@ -15,6 +15,16 @@ function getListBook() {
     return listBook;
 }
 
+function getBookByID(id) {
+    var foundBook = Book.findById(id);
+    return foundBook;
+}
+
+function getBookBySlug(slug) {
+    var foundBook = Book.findOne({ slug });
+    return foundBook;
+}
+
 function getListBookByCategory(categoryID) {
     var listBook = Book.find({ categoryID: categoryID });
     return listBook;
@@ -22,5 +32,7 @@ function getListBookByCategory(categoryID) {
 
 module.exports = {
     getListBook,
+    getBookByID,
+    getBookBySlug,
     getListBookByCategory
 };
