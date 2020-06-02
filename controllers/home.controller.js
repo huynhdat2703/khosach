@@ -81,7 +81,6 @@ async function viewPage(req, res) {
     var selectBook = await bookModel.getBookBySlug(bookSlug);
     var selectChapter = await chapterModel.getChapterBySlugAndBookID(chapSlug, selectBook._id);
 
-    console.log(selectChapter);
     res.render('home/view', {
         listCategory: listCategory,
         selectBook: selectBook,
