@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/huynhdat2703/khosach#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "mongoose": "^5.9.16",
     "pug": "^2.0.4"
   },
